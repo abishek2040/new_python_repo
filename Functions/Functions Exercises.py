@@ -63,8 +63,76 @@ default_shirt("I love python")
 
 def describe_city(city, country="UK"):
     """Accepts name of the city and its country"""
-    print(f"\n{city} is in the {country}")
+    print(f"\n{city} is in the {country}\n")
 
 describe_city("Manchester")
 describe_city("London")
 describe_city("Kathmandu")
+
+
+# Returning a simple value.
+# Let's look at a function, that takes in a first name and last name and returns a neatly formatted full name.
+
+def full_name(first, last):
+    """A function that takes in 2 args and returns a neatly formatted fullname."""
+    full = f"{first} {last}"
+    return full.title()
+
+musician = full_name("Angus","Young")
+print(musician)
+actor = full_name("Tom","Cruise")
+print(f"{actor} is the best action hero ever.")
+
+# Making an argument optional, sometimes it is necessary to make an argument optional, so that people can choose either
+# to provide value or not.
+
+def name(first, last, middle=""):
+    """This function takes, first name and last name, and an optional middle name and returns a neatly formatted full name"""
+    if middle:
+        full = f"\n{first} {middle} {last}"
+        return full.title()
+    else:
+        full = (f"\n"
+                f"{first} {last}")
+        return full.title()
+
+player = name("Wayne","Rooney","Mark")
+print(player)
+me = name("Abishek","Phuyal")
+print(me)
+
+
+# More exercises with functions:
+
+# 1 City Names:
+def city_country(city, country):
+    """A simple function that takes in city & country as arguments and returns in a nicely formatted manner."""
+    info = f'\n"{city} {country}"\n'
+    return info.title()
+
+uno = city_country("Santiago","Chile")
+print(uno)
+eng = city_country("London","England")
+print(eng)
+wal= city_country("Cardiff","Wales")
+print(wal)
+
+
+# 2. Describe Music Album - Music Album
+
+def music_album(artist,album_name):
+    """Takes in 2 arguments, name of artist and album name and returns it in a dictionary."""
+    album = {"Artist":artist, "Album":album_name}
+    return album
+
+gnr = music_album("Guns n Roses","Appetite For Destruction")
+print(gnr)
+met = music_album("Metallica","Ride The Lightning")
+print(met)
+acd = music_album("AC/DC","Back in Black")
+print(acd)
+
+
+
+
+
