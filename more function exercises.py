@@ -31,3 +31,8 @@ greet_users(one)
 
 
 # Modifying a list in a function:
+# when you pass a list to a function, the function can modify the passed list and it will be permanent, allowing you
+# to work efficiently even when you're dealing with large amount of data.
+
+# Here's a simple example of modifying a list without using functions, we'll do it again using functions later.
+
