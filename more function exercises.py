@@ -18,6 +18,7 @@ while True:
 print("Thank you for playing: ")
 
 
+
 # Passing a list to a function:
 print()
 def greet_users(guests):
@@ -27,3 +28,6 @@ def greet_users(guests):
 
 one = ["Abishek","Pramis","Rejin","Sudarshan"]
 greet_users(one)
+
+
+# Modifying a list in a function:
