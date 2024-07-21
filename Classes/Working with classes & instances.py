@@ -72,6 +72,3 @@ car3.update_odometer(250) # Calling the method to update the value.
 car3.read_odometer()
 car3.increment(100)
 
-
-
-
