@@ -45,8 +45,20 @@ class User:
         self.login_attempts += 2
         print(f"Login attempts on your account is: {self.login_attempts}")
 
+    def reset_login(self):
+        """A method that resets the login attempts. """
+        self.login_attempts = 0
+        print(f"The number of login attempts have been reset to {self.login_attempts}")
+
 
 user1 = User("Abishek", 22, "London")
 user1.describe_user()
 
+user1.increment_login() # Here we call the increase login function, multiple times.
 user1.increment_login()
+user1.increment_login()
+user1.reset_login() # We call the reset_login() method, which resets the login attempt to 0.
+user1.increment_login() # Again calling the increase_login() method.
+
+
+
