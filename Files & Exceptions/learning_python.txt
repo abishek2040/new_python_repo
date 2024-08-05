@@ -1,0 +1,6 @@
+Here I am going to describe what I've learnt so far in python:
+
+1. I've learned about the basic data structures and data types in python.
+2. I've also learned about functions and classes which helps us to write effective code.
+3. I am currently learning how to work with files in python.
+4. And later I hope to learn how to visualize data using python and machine learning.
