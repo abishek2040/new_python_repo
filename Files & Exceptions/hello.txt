@@ -1,0 +1,2 @@
+This will create a new text file. We added this line to the hello.txt file by opening in append mode. 
+We added this line to the hello.txt file by opening in append mode. 
