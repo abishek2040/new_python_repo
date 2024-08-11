@@ -12,7 +12,7 @@ while True:
     name = input("What is your name, your name will be recorded on the guest book: \nEnter Q to Quit the program. ")
     with open("guest_book.txt", "a") as gb:
         gb.write(f"{name}\n")
-    if name.lower() == "q":
+    if name == "Q":
         break
 print("Your visit has been recorded.")
 
@@ -22,7 +22,7 @@ while True:
     if language == "Q":
         break
     else:
-        with open("Programming.py", "a") as pg:
+        with open("Programming.txt", "a") as pg:
             pg.write(f"{language}\n")
             print(pg)
 
