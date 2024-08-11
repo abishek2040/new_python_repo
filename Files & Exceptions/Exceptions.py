@@ -19,3 +19,24 @@ try:
     print(5/0)
 except ZeroDivisionError:
     print("You cannot divide a number by 0.")
+
+# Using exceptions to prevent crashes Example :
+
+print("Enter two numbers to divide them \nEnter 'q' to quit. ")
+
+while True:
+    first_number = input("Enter the first number: ")
+    if first_number == "q":
+        print("Thank you")
+        break
+
+    second_number = input("Enter the second number: ")
+    if second_number == "q":
+        break
+    answer = int(first_number) / int(second_number)
+    print(answer)
+
+# The above program doesn't handle errors in anyways, and it just crashes and stops, when it encounters an error.
+# Let's use exceptions so that it can run even though it encounters errors in the program.
+
+"""We are going to create the program in another file named handling_exception.py."""
