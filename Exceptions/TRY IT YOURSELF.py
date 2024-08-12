@@ -30,13 +30,27 @@ while True:
         print(sum)
 
 
+# 10.8 Cats & Dogs
 def read_file(file):
     """A function that takes in a file and readout the contents of that file."""
-    with open(file) as fn:
-        content = fn.read()
-        print(f"{content}\n")
+    try:
+        with open(file) as fn:
+            content = fn.read()
+    except FileNotFoundError:
+        pass
+    else:
+        print(f"\n{content}\n")
 
-filename = ["cats.txt", "dogs.txt"]
+filename = ["cats.txt", "rats.txt", "dogs.txt"]
 for files in filename:
     read_file(files)
+
+
+filename = "nepal.txt"
+
+with open(filename, encoding="utf-8") as np:
+    content = np.read()
+    words = content.count("Nepal")
+    print(f"The text file contains {words} number of 'Nepal' in it. ")
+
 
