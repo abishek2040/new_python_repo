@@ -1,8 +1,12 @@
-def city_country(city, country, population):
+def city_country(city, country, population =""):
     """A simple function that takes in a city name and the country and returns a neatly formatted output."""
-    joined = f"{city} {country} - {population}"
-    return joined.title()
+    if population:
+        joined = f"{city} {country} - {population}"
+        return joined.title()
+    else:
+        joined = f"{city} {country}"
+        return joined.title()
 
 
-asia = city_country("Beijing", "China", 1000000)
+asia = city_country("Beijing", "China", )
 print(asia)

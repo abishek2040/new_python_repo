@@ -7,8 +7,8 @@ class test_country(unittest.TestCase):
     """A class to test the city_country file."""
     def test_city_country(self):
         """Checking the function"""
-        joined = city_country("Beijing", "China")
-        self.assertEqual(joined, "Beijing China")
+        joined = city_country("Beijing", "China", 1000000)
+        self.assertEqual(joined, "Beijing China - 1000000")
 
 if __name__ == "__main__":
     unittest.main()
