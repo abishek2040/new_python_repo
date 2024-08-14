@@ -1,0 +1,11 @@
+When you write a function or a class, you can also write tests for that code. Testing proves that your code works as
+it's supposed to in response to all the input types it's designed to receive. When you write tests, you can be confident
+that your code works properly as more people begin to use your program.
+
+You will also be able to test, new code as you add it to make sure your changes doesn't break your program's existing
+behaviour.
+
+In this chapter, we will learn to test code using the tool;s in python's unittest module. We will learn to build a test
+case and check that a set of input results in the output you want. We will learn about the passing and failing test, and
+learn how a failing test can make the program better.
+
