@@ -1,0 +1,6 @@
+Testing a class in python.
+
+Before we wrote tests for a function, now we'll learn how to write tests for a whole class.
+Classes are an easy way of modelling real world objects into programs, if you have a passing test for a class, you're
+working on, you can be pretty sure that adding or improving the code won't break your program completely.
+
