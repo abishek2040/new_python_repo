@@ -1,22 +1,16 @@
 # Plotting a simple line graph:
 
 import matplotlib.pyplot as plt
+input_values = [1, 2, 3, 4, 5]
 squares = [1, 4, 9, 16, 25]
-cubes = [1, 8, 27, 64, 125]
+plt.style.use('seaborn-v0_8-darkgrid')
+fig, ax = plt.subplots()
+ax.plot(input_values, squares, linewidth=3)
 
-fig, (ax,ay) = plt.subplots(2)
-ax.plot(squares)
-ay.plot(cubes)
-ax.plot(squares, linewidth=3)
-ay.plot(cubes, linewidth=3)
-ax.set_title("Squares", fontsize=13)
-ax.set_xlabel("Value", fontsize=13)
-ax.set_ylabel("Square of Value", fontsize=13)
-ay.set_xlabel("Value", fontsize=13)
-ay.set_ylabel("Cube of Value", fontsize=13)
-ay.set_title("Cubes" , fontsize=13)
-
+# Set chart title and label axes.
+ax.set_title("Square Numbers", fontsize=24)
+ax.set_xlabel("Value", fontsize=14)
+ax.set_ylabel("Square of Value", fontsize=14)
 ax.tick_params(axis='both', labelsize=13)
-
 plt.show()
 
