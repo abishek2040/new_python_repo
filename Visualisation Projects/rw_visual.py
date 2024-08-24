@@ -10,7 +10,13 @@ while True:
     # Plot the points in the walk
     plt.style.use('classic')
     fig,ax = plt.subplots()
-    ax.scatter(rw.x_values, rw.y_values,s=10, color='Green')
+    point_numbers = range(rw.num_points)
+    ax.scatter(rw.x_values, rw.y_values,s=10, edgecolors="none", c=point_numbers,cmap=plt.cm.Blues)
+
+    #Emphasize the first and the last points to create an appealing visualisation.
+
+    ax.scatter(0, 0, c='green', edgecolors='none', s=45)
+    ax.scatter(rw.x_values[-1], rw.y_values[-1], edgecolors='none', c='red', s=45)
     ax.grid(True, linestyle='--', linewidth=0.5)
     ax.set_title("Random Walk", fontsize=24, c="Green")
     ax.set_xlabel("X Values", fontsize=14, c="Red")
