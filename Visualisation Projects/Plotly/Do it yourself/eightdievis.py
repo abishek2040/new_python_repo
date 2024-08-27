@@ -8,7 +8,7 @@ die_2 = Dice()
 
 # Roll the dice and store the results in a list.
 results = []
-for i in range(1000):
+for i in range(100000000):
     result = die_1.roll() + die_2.roll()
     results.append(result)
 print(results)

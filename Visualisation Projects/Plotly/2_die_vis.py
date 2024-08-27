@@ -8,7 +8,7 @@ die_2 = Dice(10)
 # Make some rolls and store it in a list.
 results = []
 for i in range(50000):
-    result = die_1.roll() + die_2.roll()
+    result = die_1.roll() * die_2.roll()
     results.append(result)
 
 # Analyze the results.
