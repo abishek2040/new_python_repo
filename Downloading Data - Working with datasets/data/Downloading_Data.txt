@@ -1,0 +1,11 @@
+In this chapter, we are going to work with downloaded data, a vast amount of unanalyzed data can be found online, which
+hasn't been analyzed by anyone, thus we can find very interesting an unique patterns in that data and can find some
+meaningful conclusions.
+
+The 2 most common data formats we'll be working with is the .csv and .json format, we will then use Matplotlib to
+visualize the data.
+
+* csv's can be tricky and hard for humans to read, but it is a very common way to store and load data to programs, thus
+speeding the data analysis process.
+
+* Next we are going to create a .py file named highs_lows.py and do the rest.
